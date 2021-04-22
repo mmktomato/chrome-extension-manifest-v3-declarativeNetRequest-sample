@@ -1,0 +1,15 @@
+{
+  "name": "sample-dynamic",
+  "private": true,
+  "version": "0.0.1",
+  "description": "declarativeNetRequest of Manifest V3 sample (dynamic)",
+  "main": "index.js",
+  "scripts": {
+    "start": "web-ext run -s src --target chromium --start-url 'https://www.google.com'"
+  },
+  "author": "mmktomato",
+  "license": "PUBLIC DOMAIN",
+  "devDependencies": {
+    "web-ext": "^6.1.0"
+  }
+}

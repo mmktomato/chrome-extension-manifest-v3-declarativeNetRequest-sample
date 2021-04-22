@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "declarativeNetRequest-sample-dynamic",
+  "version": "0.0.1",
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback"
+  ],
+  "host_permissions": [
+    "https://www.google.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
