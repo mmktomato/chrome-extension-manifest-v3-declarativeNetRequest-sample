@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "condition": {
+      "domains": ["www.google.com"],
+      "resourceTypes": ["main_frame", "xmlhttprequest"]
+    },
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [{
+        "header": "X-DeclarativeNetRequest-Sample",
+        "operation": "set",
+        "value": "request"
+      }],
+      "responseHeaders": [{
+        "header": "X-DeclarativeNetRequest-Sample",
+        "operation": "set",
+        "value": "response"
+      }]
+    }
+  }
+]

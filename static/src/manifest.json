@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "declarativeNetRequest-sample-static",
+  "version": "0.0.1",
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback"
+  ],
+  "host_permissions": [
+    "https://www.google.com/*"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [{
+      "id": "ruleset1",
+      "enabled": true,
+      "path": "ruleset1.json"
+    }]
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
