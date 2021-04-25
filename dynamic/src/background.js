@@ -36,3 +36,9 @@ chrome.declarativeNetRequest.updateDynamicRules(rules, () => {
   }
 });
 
+// You can use `chrome.declarativeNetRequest.updateSessionRules` instead of `updateDynamicRules`.
+// If you use it, the rules are not persisted across browser sessions.
+//   ==> https://developer.chrome.com/docs/extensions/reference/declarativeNetRequest/#method-updateSessionRules
+//
+// Use `getSessionRules` in order to get session-scoped rules.
+//   ==> https://developer.chrome.com/docs/extensions/reference/declarativeNetRequest/#method-getSessionRules
